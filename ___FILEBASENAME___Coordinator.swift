@@ -3,17 +3,17 @@
 import UIKit
 
 class ___VARIABLE_sceneName___Coordinator: Coordinator {
-	var started: Bool = false
+    var started: Bool = false
     
     func start() {
-   		if !started {
-   			started = true
-   		}
+        if !started {
+            started = true
+        }
     }
 
-    func stop() {
-    	if started {
-    	
-    	}
+    func stop(completion: (() -> Void)? = nil) {
+        if started {
+            started = false
+        }
     }
 }
